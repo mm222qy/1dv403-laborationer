@@ -3,15 +3,37 @@
 window.onload = function(){
 
 	
-	var birthday = function(date){
-		
-
-
-			// Din kod här.
-
-
-
-
+	
+		var birthday = function(date){
+	
+	
+		if (date === "")
+			{throw new Error("Ange ett datum...");}
+			 
+		var today = new Date();
+        var bDay = new Date(date);
+            
+        bDay.setFullYear(2014);
+       
+        var diff = 24 * 60 * 60 * 1000 ;
+        
+        var timeLeft = (bDay.getTime() - today.getTime());
+        var daysLeft = (timeLeft / diff)+1;
+        daysLeft = Math.floor(daysLeft);
+        
+        var correctDaysLeft = daysLeft+365;
+        
+        if (daysLeft < 0){
+            console.log(correctDaysLeft);
+            return (correctDaysLeft);
+        }
+        
+        else if (daysLeft >= 0)
+        {
+            console.log(daysLeft);
+            return (daysLeft);
+        }
+        
 	};
 	// ------------------------------------------------------------------------------
 
