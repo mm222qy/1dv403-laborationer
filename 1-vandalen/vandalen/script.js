@@ -6,15 +6,18 @@ var makePerson = function(persArr){
 	var names = [];
     var ages = [];
     var agesSum = 0;
+    
     for (var i=0; i<persArr.length; i+=1){
         names.push(persArr[i].name);
         ages.push(persArr[i].age);
         agesSum+=ages[i];
     }
+    
     names.sort(function(a,b)
     {
         return a.localeCompare(b);
     });
+    
     ages.sort();
     
     var averageAge = agesSum/ages.length;
@@ -29,4 +32,3 @@ var makePerson = function(persArr){
 
     return result;
 }
-

@@ -1,0 +1,69 @@
+body {
+    background-color: #eee;
+}
+header {
+    margin: auto auto 10px;
+    height: 154px;
+    width: 566px;
+    background-image: url(LabbyMezzage.png);
+}
+main {
+    width: auto;
+    height: auto;
+}
+
+#button {
+    margin-right: 650px;
+}
+#comments {
+    font-family: 'Arial', cursive;
+    font-weight: bold;
+}
+#container {
+    height: 460px;
+}
+#message {
+    border-radius: 10px;
+    background: #efb
+}
+#messagebox {
+    width: 500px;
+    margin: auto auto 10px;
+}
+.buttons {
+    float: right;
+    width: 110px;
+}
+.buttons p {
+    font-family: 'Calibri', 'Verdana', 'Arial';
+    margin-left: 52px;
+}
+.clock {
+    float: right;
+    font-family: 'Calibri', 'Verdana', 'Arial';
+    font-size: 12px;
+    width: 50px;
+}
+.message {
+    width: 500px;
+    margin: auto auto 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    background: #be5;
+}
+.pictures {
+    float: right;
+}
+.pictures:hover {
+    transform: scale(1.2);
+}
+.value {
+    float: left;
+    font-family: 'Calibri', 'Verdana', 'Arial';
+    font-size: 15px;
+    max-width: 500px;
+    word-wrap: break-word;
+}

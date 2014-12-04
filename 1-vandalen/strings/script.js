@@ -2,16 +2,17 @@
 
 window.onload = function(){
 
-	// I denna funktion ska du skriva koden för att hantera "spelet"
+	
 	var convertString = function(str){
 		if (str === "")
 		{
 			throw new Error("Skriv in en sträng!")
 		}
 		
+		var i = 0;
 		var myarr = [i];
 		myarr = str.split("");
-		var i = 0;
+		
 		
 		for (i; i < str.length; i+=1) 
 		{
